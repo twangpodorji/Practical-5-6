@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "react-scripts build",
+    "build": "next build",
     "start": "react-scripts start",
     "lint": "next lint",
     "test": "react-scripts test --passWithNoTests --watchAll=false"
