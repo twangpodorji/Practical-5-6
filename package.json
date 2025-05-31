@@ -4,19 +4,21 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "react-scripts build",
-    "start": "react-scripts start",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint",
-    "test": "react-scripts test --passWithNoTests --watchAll=false"
+    "test": "jest --passWithNoTests"
   },
   "dependencies": {
     "next": "15.3.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-scripts": "^5.0.1"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "jest": "^29.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/jest-dom": "^6.0.0"
   }
 }
