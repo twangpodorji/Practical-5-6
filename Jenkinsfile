@@ -23,18 +23,15 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing dependencies...'
-                sh 'npm install'
+                sh 'npm install --force'
             }
         }
         
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh '''
-                    echo "Running React tests..."
-                    npm test
-                    echo "Tests completed successfully"
-                '''
+                sh 'npm list react-scripts'
+                sh 'npm test'
             }
             post {
                 always {
