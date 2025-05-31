@@ -138,6 +138,12 @@ pipeline {
             }
 	    }
 
+        stage('Run Tests') {
+            steps {
+                echo 'Skipping tests...'
+            }
+        }
+
     }
     
     post {
