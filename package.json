@@ -3,20 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "react-scripts build",
     "start": "react-scripts start",
-    "lint": "next lint",
-    "test": "react-scripts test"
+    "build": "react-scripts build", 
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
-    "next": "15.3.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-scripts": "5.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "react-scripts": "^5.0.1",
     "tailwindcss": "^4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
